@@ -1,38 +1,128 @@
-.App {
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.group-list {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.group-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.group-content {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.group-details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.group-label {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  min-width: 80px;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+  margin-right: 10px;
+}
+
+.group-inputs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+}
+
+.show-status {
+  margin: auto;
+  padding: 5px 10px;
   color: white;
+  border-radius: 10px;
+  background-color: #007bff;
+  cursor: pointer;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.status-list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  white-space: nowrap; /* Prevent line wrapping */
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.status-item {
+  display: inline-block; /* Ensure items are inline */
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  min-width: 70px;
+  text-align: center; /* Center-align the text in each box */
+}
+
+.check-icon {
+  color: green;
+  margin-left: 10px;
+}
+
+.add-group {
+  padding: 10px;
+  /* background-color: #007bff; */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+}
+
+.group-inputs label {
+  margin-right: 5px;
+  white-space: nowrap; /* Ensure labels don't wrap */
+}
+
+.group-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.arrow-icon {
+  margin: 0 5px;
+}
+
+.group-content {
+  width: 100%;
 }
