@@ -1,5 +1,5 @@
 .app-container {
-  max-width: 800px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -62,12 +62,30 @@ input[type="number"] {
 
 .show-status {
   margin: auto;
-  padding: 5px 10px;
+  padding: 10px 10px;
   color: white;
   border-radius: 10px;
   background-color: #007bff;
   cursor: pointer;
+  border: none;
   
+}
+
+.show-status:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.show-status:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  
+
+}
+
+.show-status.disabled .tooltip {
+  visibility: hidden;
+  display: none;
 }
 
 .status-list {
@@ -89,6 +107,13 @@ input[type="number"] {
   border-radius: 3px;
   min-width: 70px;
   text-align: center; /* Center-align the text in each box */
+}
+
+.error-message {
+  color: red;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
 }
 
 .check-icon {
@@ -126,3 +151,5 @@ input[type="number"] {
 .group-content {
   width: 100%;
 }
+
+

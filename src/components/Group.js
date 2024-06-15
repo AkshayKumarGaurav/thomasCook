@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeGroup, updateGroup, setStatuses } from '../store/store';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash, faArrowRight, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 
 const Group = ({ index, group }) => {
@@ -63,7 +63,6 @@ const Group = ({ index, group }) => {
               ({key}) {value ? 'True' : 'False'}
             </div>
           ))}
-          <FontAwesomeIcon icon={faCheck} className="check-icon" />
         </div>
       </div>
     </div>
